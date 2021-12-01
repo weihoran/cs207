@@ -2,9 +2,10 @@ public class test {
 
     public static void main(String[] args){
 
+
         float a = 1.0f - 0.9f;
         float b = 0.9f - 0.8f;
-        System.out.println(a==b);
+        System.out.println(a == b);
 
         float k = 0.9f;
         System.out.println(k);
@@ -24,6 +25,8 @@ public class test {
         float diff =1e-6f;
         if(Math.abs(a-b)<diff)
             System.out.println(true);
+
+
 
 
 

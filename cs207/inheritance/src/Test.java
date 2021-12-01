@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class Test {
 	public static void main(String[] args) {
 
+		movable a = new Apple();
+
+
 		Fruit v1 = new Fruit("first fruit");
 		Fruit v2 = new Apple(1,"Macintosh");
 		Apple v3 = new Apple(2,"Fuji");

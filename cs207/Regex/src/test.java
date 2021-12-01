@@ -5,16 +5,21 @@ public class test {
 
     public static void main(String[] args) {
 
+        /*
+        String abc = "ABC";
+        String abc_regex = "ABC";
+        System.out.println(Pattern.matches(abc_regex,abc));
+        */
 
         //Normal Match-------------------------------
         String line = "2017-04-25";
         String regex = "\\d{4}-\\d{2}-\\d{2}";
         System.out.println(Pattern.matches(regex,line));
-        //System.out.println(line.matches(regex));
+
 
 
         //find and extract
-        Pattern p=Pattern.compile("^[a-z0-9]{2}(a|b|c)\\1");
+        Pattern p = Pattern.compile("[a-z0-9]{2}(a|b|c)\\1");
         Matcher m = p.matcher("a2bbc,1cc2bb12b2c");
 
         while(m.find()) {

@@ -1,7 +1,25 @@
 public class test {
 
-    private Shape myShape;
+    //private Shape myShape;
     public test(Shape s){
-       myShape = ShapeFactory.getShape("circle");
+       Shape circle = ShapeFactory.getShape("circle");
+       Shape rectangle = ShapeFactory.getShape("rectangle");
+
+
+
+
+        Shape c = new Circle(); // abstract dependency
+        Shape r = new Rectangle();
+        //...
+        //...
+
+
+
+
+
+
     }
+
+
+
 }

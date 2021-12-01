@@ -2,7 +2,7 @@ import java.util.List;
 
 public class test {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
@@ -10,10 +10,12 @@ public class test {
             }
         };
 
-        Runnable r2 = () -> {System.out.println("thread 2");};
+        Runnable r2 = () -> {
+            System.out.println("thread 2");
+        };
 
-        Thread r3 = new Thread(){
-            public void run(){
+        Thread r3 = new Thread() {
+            public void run() {
                 System.out.println("thread 3");
             }
         };
@@ -24,40 +26,6 @@ public class test {
         new Thread(r2).start();
         r3.start();
         r4.start();
-
-
-        //two ways to do multi-threading
-
-
-
-
-
-    //first one, with Runnable Interface, utilize this method in the test.
-    class demo implements Runnable {
-
-        public void run(){
-            System.out.println("hello");
-        }
     }
-    Thread t1 = new Thread(demo);
-    t1.start();
-
-
-    //second one, with Thread class
-    class demo2 extends Thread{
-        public void run(){
-            System.out.println("deom3");
-        }
-    }
-    demo2.start();
-
-
-    }
-
-
-
-
-
-
 
 }

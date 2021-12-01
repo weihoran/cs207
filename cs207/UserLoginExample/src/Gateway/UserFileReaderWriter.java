@@ -10,7 +10,7 @@ public class UserFileReaderWriter {
     public void saveUserToFile(ArrayList userList){
         try
         {
-            FileOutputStream fos = new FileOutputStream("UserData");
+            FileOutputStream fos = new FileOutputStream("UserData.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(userList);
             oos.close();
@@ -29,7 +29,7 @@ public class UserFileReaderWriter {
 
         try
         {
-            File file = new File("UserData");
+            File file = new File("UserData.ser");
             file.createNewFile();
             FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);

@@ -1,14 +1,15 @@
 
 public class Grape extends Fruit {
 
-    public String name = "Grape";
-    public boolean isForSale = true;
-    public static String salesCat = "individual produce";
+    //public String name = "Grape";
+    //public boolean isForSale = true;
+    //public static String salesCat = "individual produce";
+    public String color;
 
-
-    public Grape() {
-       super("Fruit");
-    }
+    public Grape(String name, String color) {
+        super(name);
+        this.color = color;
+    }   // super.__init__("fruit")
 
     public static String getSalesCat() {
         return salesCat;
@@ -22,8 +23,9 @@ public class Grape extends Fruit {
         isForSale = status;
     }
 
+    @Override
     public String getName() {
-        return name;
+        return "my name is :" + name;
     }
 
     public Pear fruitSalad(){

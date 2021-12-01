@@ -1,36 +1,36 @@
 package Controller;
 
 import Gateway.UserFileReaderWriter;
+import Presenter.IUserSystemPresenter;
+import Presenter.UserSystemPresenter;
 import UseCases.UserManager;
 
 
 import java.util.ArrayList;
 
 public class UserSystemFacde {
-    UserSystemController uc;
-    UserManager um;
+    private UserSystemController uc;
+    private UserManager um;
     private UserFileReaderWriter uf = new UserFileReaderWriter();
-
+    private IUserSystemPresenter up;
 
     public UserSystemFacde(){
         ArrayList userList = uf.readUserFromFile();
-        um = new UserManager(userList);
+        up = new UserSystemPresenter();
+        um = new UserManager(userList, up);
         uc = new UserSystemController(um);
-        //up = new UserSystemPresenter(um);
-
     }
-    public ArrayList loadingUserDataFromFile(){
-        return uf.readUserFromFile();
-    }
+    //public ArrayList loadingUserDataFromFile(){
+      //  return uf.readUserFromFile();
+    //}
 
     public void register(String username, String password){
-        uc.create(username,password);
+        uc.register(username,password);
+
     }
 
-    public boolean login(String username, String password){
-
-        return uc.verify(username, password);
-
+    public void login(String username, String password){
+        uc.login(username, password);
     }
 
     public void exit() {

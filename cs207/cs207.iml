@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Iterator" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/patterns1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/patterns2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CleanArchLoginSample/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Thread/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -3,31 +3,43 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Abstraction/Abstraction.iml" filepath="$PROJECT_DIR$/Abstraction/Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Builder/Builder.iml" filepath="$PROJECT_DIR$/Builder/Builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Command/Command.iml" filepath="$PROJECT_DIR$/Command/Command.iml" />
       <module fileurl="file://$PROJECT_DIR$/Comparable/Comparable.iml" filepath="$PROJECT_DIR$/Comparable/Comparable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Decorator/Decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exception/Exception.iml" filepath="$PROJECT_DIR$/Exception/Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facade/Facade.iml" filepath="$PROJECT_DIR$/Facade/Facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/Factory/Factory.iml" filepath="$PROJECT_DIR$/Factory/Factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/FinalExam/FinalExam.iml" filepath="$PROJECT_DIR$/FinalExam/FinalExam.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Floating/Floating.iml" filepath="$PROJECT_DIR$/Floating/Floating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Iterator/Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX/JavaFX.iml" filepath="$PROJECT_DIR$/JavaFX/JavaFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaIO/JavaIO.iml" filepath="$PROJECT_DIR$/JavaIO/JavaIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoginSwingExample/LoginSwingExample.iml" filepath="$PROJECT_DIR$/LoginSwingExample/LoginSwingExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/MVP/MVP.iml" filepath="$PROJECT_DIR$/MVP/MVP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Observable/Observable.iml" filepath="$PROJECT_DIR$/Observable/Observable.iml" />
       <module fileurl="file://$PROJECT_DIR$/Regex/Regex.iml" filepath="$PROJECT_DIR$/Regex/Regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Strategy/Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Swing/Swing.iml" filepath="$PROJECT_DIR$/Swing/Swing.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserLoginExample/UserLoginSwingExample.iml" filepath="$PROJECT_DIR$/UserLoginExample/UserLoginSwingExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class design/class design.iml" filepath="$PROJECT_DIR$/class design/class design.iml" />
       <module fileurl="file://$PROJECT_DIR$/codeSmell/codeSmell.iml" filepath="$PROJECT_DIR$/codeSmell/codeSmell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/composition/composition.iml" filepath="$PROJECT_DIR$/composition/composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/cs207.iml" filepath="$PROJECT_DIR$/cs207.iml" />
       <module fileurl="file://$PROJECT_DIR$/floating_point/floating_point.iml" filepath="$PROJECT_DIR$/floating_point/floating_point.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gene/gene.iml" filepath="$PROJECT_DIR$/gene/gene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap/heap.iml" filepath="$PROJECT_DIR$/heap/heap.iml" />
       <module fileurl="file://$PROJECT_DIR$/inheritance/inheritance.iml" filepath="$PROJECT_DIR$/inheritance/inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junit/junit.iml" filepath="$PROJECT_DIR$/junit/junit.iml" />
       <module fileurl="file://$PROJECT_DIR$/codeSmell/messageChain.iml" filepath="$PROJECT_DIR$/codeSmell/messageChain.iml" />
-      <module fileurl="file://$USER_HOME$/Downloads/patterns1/patterns1.iml" filepath="$USER_HOME$/Downloads/patterns1/patterns1.iml" />
-      <module fileurl="file://$USER_HOME$/Downloads/patterns2/patterns2.iml" filepath="$USER_HOME$/Downloads/patterns2/patterns2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithread/multithread.iml" filepath="$PROJECT_DIR$/multithread/multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patterns1/patterns1.iml" filepath="$PROJECT_DIR$/patterns1/patterns1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patterns2/patterns2.iml" filepath="$PROJECT_DIR$/patterns2/patterns2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/university_example/university_example.iml" filepath="$PROJECT_DIR$/university_example/university_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/week2_in_class/week2_in_class.iml" filepath="$PROJECT_DIR$/week2_in_class/week2_in_class.iml" />
       <module fileurl="file://$PROJECT_DIR$/试听课/试听课.iml" filepath="$PROJECT_DIR$/试听课/试听课.iml" />
     </modules>

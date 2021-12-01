@@ -1,33 +1,37 @@
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
+import java.sql.SQLException;
+
 
 public class TestException {
 
-    public static void main(String[] args){
-
+    public static void main(String[] args) throws FileNotFoundException {
 
 
         //------------------Checked Exception-----------------------------------
 
         //IO Exception
-        FileInputStream fis = null;
+        FileInputStream fis;
+        //fis = new FileInputStream("B:/myfile.txt");
+
+
 
         try {
             fis = new FileInputStream("B:/myfile.txt");
-        } catch (FileNotFoundException e) {
+        }
+        catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("You are opening .....");
         }
+
         System.out.println("aaaaaaaaa");
 
 
         //------------------Runtime（unchecked） Exception--------------------------------------
-        int num1=10;
-        int num2=0;
+        int num1 = 10;
+        int num2 = 0;
         //Since I'm dividing an integer with 0, it should throw ArithmeticException
+
         try {
             int res = num1 / num2;
         }
@@ -35,16 +39,15 @@ public class TestException {
             e.printStackTrace();
         }
         finally {
-
+            System.out.println("always run");
         }
-
 
 
         //-------------------Customized Exception---------------------------------
         try {
             checkNumbers(0);
         }
-        catch (MultipleMyZeroNumberException e) {
+        catch (MyZeroNumberException e) {
             e.printStackTrace();
         }
 
@@ -52,19 +55,13 @@ public class TestException {
 
 
 
-
-
-
-
-
-
     }
 
 
 
-    public static void checkNumbers(int num) throws MultipleMyZeroNumberException {
-        if (num==0)
-            throw new MultipleMyZeroNumberException("The number can't be zero");
+    public static void checkNumbers(int num) throws MyZeroNumberException {
+        if (num == 0)
+            throw new MyZeroNumberException("encounter 0");
     }
 
 

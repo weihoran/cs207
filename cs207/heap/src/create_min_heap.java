@@ -5,6 +5,7 @@ public class create_min_heap {
 
     static void heapify(int array[], int size, int i)
     {
+
         int smallest = i;    // Initialize current node as largest
         int left = 2 * i + 1;   // position of left child in array = 2*i + 1
         int right = 2 * i + 2;   // position of right child in array = 2*i + 2

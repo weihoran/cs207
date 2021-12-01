@@ -1,21 +1,14 @@
-public class Apple extends Fruit {
-	public String name;
-	public static int numFruit =2;
+public abstract class Apple extends Fruit implements movable{
 	private int numSeeds;
-	private String variety;
 
-	public Apple(int numSeeds, String variety) {
-		super("apple");
+
+	public Apple(int numSeeds) {
+		super("aaa");
 		this.numSeeds = numSeeds;
-		this.variety = variety;
-
 	}
-	
+
 	public int getNumSeeds() {
 		return numSeeds;
-	}
-	public String getVariety() {
-		return variety;
 	}
 
 
@@ -28,6 +21,8 @@ public class Apple extends Fruit {
 
 	@Override
 	public String getName() {
+		System.out.println(super.name);
+
 		return name;
 	}
 
@@ -45,5 +40,20 @@ public class Apple extends Fruit {
 	public static Apple pickFruit(Fruit f)
 	{
 		return new Apple(0,"new apple");
+	}
+
+	@Override
+	public void move() {
+
+	}
+
+	@Override
+	public void stop() {
+
+	}
+
+	@Override
+	public void getposition() {
+
 	}
 }

@@ -2,6 +2,38 @@ public class FruitStand {
 
     public static void main(String[] args) {
 
+
+
+
+        char c  = 'A';
+        System.out.println((int)c);
+
+        String s ="aaa";
+        System.out.println(s.hashCode());
+        char[] ch = s.toCharArray();
+        System.out.println((int)ch[0] + (int)ch[1] + (int)ch[2]); //979797
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         Fruit f1 = new Fruit("New Fruit");
         Fruit f2 = new Grape();
         Fruit f3 = new Pear();

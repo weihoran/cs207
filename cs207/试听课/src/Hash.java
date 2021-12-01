@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-class Hash {
+class Car {
     private String registration;
     private String model;
     private int odometer;
@@ -13,7 +13,7 @@ class Hash {
      * @param odometer the car’s current odometer reading
      * @param transmission the car’s transmission type
      * */
-    public Hash(String registration, String model, int odometer,
+    public Car(String registration, String model, int odometer,
                String transmission) {
         this.registration = registration;
         this.model = model;
@@ -37,7 +37,8 @@ class Hash {
         if(this == obj) return true;
         if(obj == null) return false;
         if(this.getClass() != obj.getClass()) return false;
-        Hash car = (Hash)obj;
+
+        Car car = (Car)obj;
         return registration.equals(car.registration) && model.equals(car.model) && odometer == car.odometer && transmission.equals(car.transmission);
     }
 

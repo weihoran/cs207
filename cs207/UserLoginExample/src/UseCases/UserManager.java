@@ -1,36 +1,42 @@
 package UseCases;
 
-import Entity.IUser;
-import Entity.regularUser;
+import Entity.*;
+import Presenter.IUserSystemPresenter;
 
 import java.util.ArrayList;
 
-public class UserManager {
-    public static ArrayList<IUser> userlist;
+public class UserManager implements IUserManager{
+    public static ArrayList<User> userlist;
+    private IUserSystemPresenter presenter;
 
-    public UserManager(ArrayList<IUser> userList){
-        userlist = userList;
+    public UserManager(ArrayList<User> userList, IUserSystemPresenter presenter){
+        this.presenter = presenter;
+        this.userlist = userList;
     } //denpendcy injection
 
     public String getUser(String username){
-        for(IUser u : userlist){
+        for(User u : userlist){
             if(u.getUsername().equals(username))
                 return u.toString();
         }
         return "no such user";
     }
 
-    public boolean verifyUser(String id, String password){
-        for(IUser u : userlist){
-            if(u.getUsername().equals(id) && u.getPassword().equals(password))
-                return true;
+    public void verifyUser(String id, String password){
+        for(User u : userlist){
+            if(u.getUsername().equals(id) && u.getPassword().equals(password)) {
+                presenter.showLoginResponse(true);
+                return;
+            }
         }
-        return false;
+        presenter.showLoginResponse(false);
     }
 
     public void createRegularUser(String username, String pw){
-        regularUser user = new regularUser(username, pw);
+        User user = new RegularUser(username, pw);
         userlist.add(user);
+
+        presenter.showRegisterResponse(true);
     }
 
 }
